@@ -1,32 +1,37 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
-         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "patterns": ["Hi", "Hello", "Good day", "Whats up"],
+         "responses": ["Hi there, how are you?", "Nothing much and yourself?"],
          "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "Bye"],
          "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
          "context_set": ""
         },
-        {"tag": "age",
-         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
-         "responses": ["I am 18 years old!", "18 years young!"],
-         "context_set": ""
-        },
         {"tag": "name",
-         "patterns": ["what is your name", "what should I call you", "whats your name?"],
-         "responses": ["You can call me Tim.", "I'm Tim!", "I'm Tim aka Tech With Tim."],
+        "patterns": ["what is your name", "what should I call you", "whats your name?"],
+        "responses": ["You can call me Tim.", "I'm Tim.", "I'm Tim the Titan!"],
+        "context_set": ""
+        },
+        {"tag": "sad",
+         "patterns": ["I feel unhappy", "I'm sad", "Its been a hard day", "Its has been a rough day"],
+         "responses": ["It get's better", "Don't worry about it", "I feel you"],
          "context_set": ""
         },
-        {"tag": "shop",
-         "patterns": ["Id like to buy something", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
-         "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
+        {"tag": "happy",
+         "patterns": ["I feel good", "not bad either", "Pretty good", "Alright"],
+         "responses": ["That's awesome!", "Me too", "Sounds good"],
          "context_set": ""
         },
-        {"tag": "hours",
-         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
-         "responses": ["We are open 7am-4pm Monday-Friday!"],
+        {"tag": "relax",
+        "patterns": ["I'm chilling", "vibin", "", "relaxing"],
+        "responses": ["That's whatup", "Nice!", "thats cool"],
+        "context_set": ""
+        },
+        {"tag": "tired",
+         "patterns": ["I'm tired", "A little sore", "i feel a little lazy"],
+         "responses": ["You should get some rest", "how about a little stretching then"],
          "context_set": ""
         }
    ]
