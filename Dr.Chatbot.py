@@ -103,6 +103,15 @@ def chat():
             break
 
         results = model.predic([bag_of words(inp, words)])
+        results_index = numpy.argmax(results)
+        tag = labels[results_index]
+        print(tag)
         print(results)
+
+        for tg in data["intents"]:
+            if tg['tag'] == tag:
+                reponses = tg['responses']
+
+        print(random.choice(responses))
 
 chat()
